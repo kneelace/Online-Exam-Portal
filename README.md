@@ -1,6 +1,6 @@
 # AceIT -- Online Exam Portal
 
-## Project Description 
+## Project Description
 
 
 ![Dashboard Page](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/dashboard%20page.png)
@@ -45,13 +45,21 @@ AceIT project is a web portal which is developed or implemented in java domain p
 
 ### User Module
 
+![Student Dashboard](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/Student%20Dashboard.png)
+
 In this module there will be a dashboard page/landing page where the user will first have to login by entering ‘student login id’ and ‘password’ to get access, if the user is visiting for the first time then user will have to click on the ‘Register’ button and will be directed to the new registration page where the user has to enter the all necessary required details mentioned on that page and then click on the ‘SUBMIT’ button, after which the user again will be directed to the homepage. 
+
+![Student Registration](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/Student%20Registration.png)
 
 After login the student user will get access to his/her profile which entails ‘APPEAR FOR EXAM’ option and ‘VIEW RESULTS’ button.
 
 And also set of do and don'ts or basic instructions of the exams. This is hard coded as of now.
 
 Before login if the user tries to get access to these buttons then the user will be directed to the homepage again and ask user to login first with a popup.
+
+
+![Student Login](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/Student%20Login.png)
+
 
 Now if the user is logged in then the user will be able to view user report of the exam the user has appeared for by clicking on the ‘VIEW RESULTS’ option to view the user’s score and along with this the user can appear for the new exam by clicking on the ‘APPEAR FOR EXAM’ option.
 
@@ -73,15 +81,24 @@ Every level exam is minimum time bounded.
 
 ### Admin Module
 
+![Admin Dashboard Page](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/Admin%20Dashboard.png)
+
 In this module the admin will be able login by entering ‘login id’ and ‘password’.
 
 The ‘login id’ and ‘password’ is currently hardcoded admin. 
 
+![Admin Login Page](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/Admin%20Login.png)
+
+
 The admin after logged in will be directed to a new page where the admin can click on the ‘VIEW REPORTS’ button which on click will direct the admin to a new page where the admin will be able to enter necessary fields to fetch the students details according to the demand from the client. 
+
+
 
 The most important functionality of admin is the ability create and conduct exams, both of which require adding or removing questions from db. 
 
 This is probably the most complex part of code in my opinion.
+
+![Upload Questions](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/Create%20Exam.png)
 
 Also, after login the admin will be able to add question or remove question by clicking on ‘CREATE EXAM’ button or ‘REMOVE QUESTIONS FILE’ button. 
 
@@ -89,6 +106,8 @@ If the admin clicks on the ‘CREATE EXAM’ button, then the admin will be dire
 Preferred formats are XLSx, XLS, CSV.
 
 Also some tags are required to be given like Type of exam, level of exam, pass criteria, Exam Time, etc.
+
+![View Reports](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/View%20Reports%20Admin.png)
 
 After clicking on ‘UPLOAD button the file will be uploaded to the database.
 
@@ -128,3 +147,4 @@ which makes the code more complex but design gets more intuitive.
 
 asking for tags and level is fine while uploading a question but passing criteria and exam time should be seperated.
 
+![About us](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/About%20us.png)
