@@ -16,3 +16,12 @@ AceIT project is a web portal which is developed or implemented in java domain p
 3. It will reduce paper work to be an integrated Online Examination System.
 4. The result can be shown immediately to the students reducing the anxiety.
 5. Can create various reports and graphs for evaluation purpose almost instantly when and where required.
+
+
+### How to Install
+
+> This is a end to end project which requires tables, triggers, sequences in database to be installed.
+>So the first step will be setting up software tools.
+
+1. Install SQL Developer for DB
+2. This project runs on java so make sure Java is installed - java jdk 1.8 or higher.
