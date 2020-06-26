@@ -1,0 +1,127 @@
+create table student
+(student_id number primary key,
+student_firstname varchar2(20) not null,
+student_lastname varchar2(20),
+student_middlename varchar2(20),
+student_email varchar2(40)  not null,
+student_mobile varchar2(20),
+student_dob varchar2(30),
+student_state varchar2(20),
+student_city varchar2(20),
+student_year_qualified varchar2(10),
+password varchar2(20),
+student_batch_id varchar2(20) not null);
+
+
+insert into student values(1,'varsha','chhabria','ambrat','varsha.chhabria98@gmail.com','9852635269','29-04-1998','maharashtra','mumbai','2019','varsha@123','771');
+insert into student values(2,'bhakti','kantariya','armish','bhaktikantariya128@gmail.com','9852635069','28-12-1997','maharashtra','mumbai','2019','bhakti@123','771');
+insert into student values(3,'hardeek','thakkar','abc','hardeek@gmail.com','9212635269','29-06-1998','maharashtra','mumbai','2019','hardeek@123','771');
+
+create table exam
+(
+exam_id number primary key,
+exam_level varchar2(10),
+subject varchar2(20),
+file_path varchar2(50),
+passing_criteria number not null);
+
+
+insert into exam values(1,'l1','java','javaquestionl1.csv',65);
+insert into exam values(2,'l2','java','javaquestionl2.csv',60);
+insert into exam values(3,'l3','java','javaquestionl3.csv',55);
+
+create table authentication
+(auth_id number(10) primary key,
+student_id number(10) not null ,
+user_name varchar2(40),
+password varchar2(20),	
+CONSTRAINT fk_student_id
+foreign key (student_id)
+references student(student_id));
+
+
+insert into authentication values(1,'varsha.chhabria98@gmail.com','varsha@123');
+insert into authentication values(2,'bhaktikantariya128@gmail.com','bhakti@123');
+insert into authentication values(3,'hardeek@gmail.com','hardeek@123');
+
+
+create table questions
+(question_id number,
+exam_id number,
+question_desc varchar2(400),
+option1 varchar2(400),
+issolution1 varchar2(10),
+option2 varchar2(400),
+issolution2 varchar2(10),
+option3 varchar2(400),
+issolution3 varchar2(10),
+option4 varchar2(400),
+issolution4 varchar2(10),
+primary key(question_id),
+UNIQUE (question_id, exam_id),
+foreign key (exam_id)
+references exam(exam_id));
+
+insert into questions values(1,1,'What is the range of short data type in Java?','-128 to 127','false','-32768 to 32767','true','-2147483648 to 2147483647','false','none of the above','false');
+insert into questions values(2,2,'Which of these literals can be contained in float data type variable?','-1.7e+308','false','-3.4e+038','true','+1.7e+308','false','none of the above','false');
+insert into questions values(3,3,'Which data type value is returned by all transcendental math functions?','int','false','float','false','double','true','long','false');
+
+
+
+create table results
+(result_id number,
+exam_id number,
+student_id number,
+result_score number,
+result_status varchar2(10),
+date_of_exam varchar2(30),
+primary key(result_id),
+foreign key (exam_id)
+references exam(exam_id),
+foreign key (student_id)
+references student(student_id),
+UNIQUE (result_id, exam_id,student_id));
+
+insert into results(result_id,exam_id,student_id,date_of_exam)values(1,1,1,19-08-2019);
+insert into results(result_id,exam_id,student_id,date_of_exam)values(2,1,2,19-08-2019);
+insert into results(result_id,exam_id,student_id,date_of_exam)values(3,1,3,19-08-2019);
+
+SELECT * FROM questions order by DBMS_RANDOM.VALUE;
+
+
+
+1	``					
+
+
+
+ALTER TABLE authentication
+
+CREATE SEQUENCE student_seq
+ START WITH     11
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+
+CREATE SEQUENCE exam_seq
+ START WITH     11
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+
+CREATE SEQUENCE results_seq
+ START WITH     11
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+
+CREATE SEQUENCE questions_seq
+ START WITH     11
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
+
+CREATE SEQUENCE authentication_seq
+ START WITH     11
+ INCREMENT BY   1
+ NOCACHE
+ NOCYCLE;
