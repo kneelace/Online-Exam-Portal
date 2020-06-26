@@ -24,10 +24,16 @@ AceIT project is a web portal which is developed or implemented in java domain p
 >So the first step will be setting up software tools.
 
 > Install SQL Developer for DB
+
 > This project runs on java so make sure Java is installed - java jdk 1.8 or higher.
+
 > Clone the Project
+
 > Make sure that you have a reliable internet connection for getting maven dependencies/plugins.
+
 >Import the Project. Click on maven install.
+
 >Install a Web Server, we used Tomcat Server, version 8 or above will do.
+
 >and that's it. now one can use all the functionalities of this project.
 
