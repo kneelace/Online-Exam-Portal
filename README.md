@@ -95,25 +95,32 @@ If the admin clicks on the ‘Remove Question’ button, then the admin will aga
 ### Feature Future Scope
 
 >PASSWORD HASHING
+
 We are currently saving the password in the database in plain text, which is a big security risk, and we are aware of that. We will soon update it with Argon2 java hashing technique or better.
 
 >FORGOT PASSWORD
+
 If user has forgot the ‘password’ then the user can click on ‘forgot password?’ link and then system will send a ‘reset password’ link on the email the user had provided at the time of registration. 
 
 > EXAM INSTRUCTIONS FOR STUDENT
+
 Every exam can have different passing criteria and different negative marking. We are working on allowing the admin somehow to be able to customize them for a set of students.   
 
 >EMAIL CONNECTION
+
 During Registration from student, we ask for email, but due to proxy issues and less time frame for development, we settled with generating reports online itself. 
 
 >Add ADMIN
+
 Admin user is hardcoded currently. We are working on allowing more admins to be added to the database.
 
 >UPLOAD ONE BY ONE QUESITONS
+
 Questions can be uploaded from a excel sheet only currently even though only few questions are to be uploaded. Which is again bounded to be done in certain format.
 We are working on creating an page where admin can upload questions and answers from the UI itself using Jquery.
 which makes the code more complex but design gets more intuitive.
 
 >SEPERATION OF EXAM CRITERIA
+
 asking for tags and level is fine while uploading a question but passing criteria and exam time should be seperated.
 
