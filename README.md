@@ -27,7 +27,9 @@ AceIT project is a web portal which is developed or implemented in java domain p
 
 > This project runs on java so make sure Java is installed - java jdk 1.8 or higher.
 
-> Clone the Project
+>Run All Queries one by one from queries.txt which include create tables, insert dummy data, create sequences, etc.
+
+>Clone the Project
 
 > Make sure that you have a reliable internet connection for getting maven dependencies/plugins.
 
