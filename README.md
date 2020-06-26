@@ -1,6 +1,6 @@
 # AceIT -- Online Exam Portal
 
-## ProjecDashboard Paget Description
+## Project Description 
 
 
 ![Dashboard Page](https://github.com/kneelace/Online-Exam-Portal/blob/master/images/dashboard%20page.png)
